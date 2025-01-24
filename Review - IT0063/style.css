@@ -41,12 +41,10 @@ body{
 
 }
 
-.logo h1{
-    font-size: 2.5rem;
-    letter-spacing: 5px;
-    font-family: "Montserrat", serif;
-    color: rgb(236, 56, 2);
+img{
+    height: 80px;
 }
+
 
 .logo h2{
     font-size: 1.5rem;
