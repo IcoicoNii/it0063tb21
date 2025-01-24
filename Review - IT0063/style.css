@@ -11,13 +11,14 @@
 }
 
 body{
-    background: #F2F4F7;
-    
+    /* border: solid; */
+    /* height: 70vh; */
 }
 
 main{
     /* border: solid; */
-    height: 630px;
+    background: #F2F4F7;
+    height: 640px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,9 +120,11 @@ input:focus{
 
 footer{
     background-color: #FFFFFF;
-    height: 120px;
+    height: 40%;
+    /* max-height: 275px; */
     margin: 0 auto;
     padding: 20px 10px;
+
     
 }
 
