@@ -11,16 +11,16 @@
 }
 
 html{
-    background: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 body{
     /* border: solid; */
-    /* height: 70vh; */
-    background: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
-main{
+
+.maincontainer{
     /* border: solid; */
     background: #F2F4F7;
     height: 640px;
