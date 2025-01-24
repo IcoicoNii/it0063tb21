@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", serif;
+    transition-duration: 1s;
+
+
+}
+
+body {
+    margin: 0px auto;
+    background-image: url("./images/bg.jpg");
+}
+
+.radial{
+    margin: 0 auto;
+    height: 2rem;
+    width: 2rem;
+    /* border: solid; */
+    border-radius: 50%;
+}
+
+.green-gradient{
+    background-image: linear-gradient(#283618, #606c38,#dda15e,#bc6c25);
+}
+.blue-gradient{
+    background-image: linear-gradient(rgb(65, 61, 61),rgb(3, 136, 224),rgb(255, 251, 245));
+}
+.brown-gradient{
+    background-image: linear-gradient(#432818, #6f1d1b, #99582a,#bb9457,#ffe6a7);
+}
+
+.container{
+    /* border: solid; */
+    padding: 20px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    filter: drop-shadow(3px 3px 3px #373737);
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* From Uiverse.io by Voxybuns */ 
+button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.3rem;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+  
+
+.resume {
+    /* border: solid; */
+    background-color: white;
+    width: 670px;
+    height: 878px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/* LEFT STYLES */
+
+.left{
+    background-color: rgb(65, 61, 61);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.left hr{
+    margin: 0px auto;
+    width: 80%;
+}
+
+.left h1{
+    font-size: 1.5rem;
+    font-family: "Montserrat", serif;
+    letter-spacing: 2px;   
+}
+
+.left h2{
+    font-size: 0.7rem;
+    font-family: "Montserrat", serif;
+    letter-spacing: px;   
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons-color{
+    color: rgb(3, 136, 224);
+    
+}
+
+.pic img{
+    height: 175px;
+    border-radius: 50%;
+    filter: drop-shadow(3px 3px 0px #d5d5d5);
+}
+.pic {
+    flex-grow: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-box{
+    width: 80%;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.icons-size{
+    font-size: 1.3rem;
+}
+
+.contact{
+    /* border: solid; */
+    flex-grow: 1;
+}
+.socials{
+    /* border: solid; */
+    flex-grow: 1.5;
+}
+.skills{
+    /* border: solid; */
+    flex-grow: 7;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.bar{
+    border: solid;
+    height: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.skills .white{
+    background: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.skill .blue{
+    background: rgb(3, 136, 224);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+
+.skill .flexgrow1{
+    flex-grow: 1;
+}
+.skill .flexgrow2{
+    flex-grow: 2;
+}
+.skill .flexgrow3{
+    flex-grow: 3;
+}
+.skill .flexgrow4{
+    flex-grow: 4;
+}
+.skill .flexgrow5{
+    flex-grow: 5;
+}
+.skill .flexgrow6{
+    flex-grow: 6;
+}
+.skill .flexgrow7{
+    flex-grow: 7;
+}
+.skill .flexgrow8{
+    flex-grow: 8;
+}
+.skill .flexgrow9{
+    flex-grow: 9;
+}
+.skill .flexgrow10{
+    flex-grow: 10;
+}
+
+
+
+
+
+/* RIGHT STYLES */
+
+.right{
+    flex-grow: 1;
+    background-color: rgb(255, 251, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.section{
+    /* border: solid; */
+    height: 100px;
+    width: 80%;
+}
+
+.right h1{
+    font-family: "Oswald", serif;
+    font-size: 1.7rem;
+}
+
+.right h2{
+    font-family: "Oswald", serif;
+    font-size: 1.2rem;
+    color: rgb(3, 136, 224);
+}
+
+.right h3{
+    font-size: 1.2rem;
+}
+
+.right p{
+    font-size: 0.8rem;
+}
+
+.right hr{
+    width: 80%;
+}
+
+.name{
+    height: auto;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+}
+
+.educ{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+}
+
+
+.school{
+    /* border: solid; */
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+}
+
+.school .logo{
+    width: 20px;
+}
+
+.school img{
+    width: 20px;
+}
+
+.school .info{
+
+}
+
+.awards{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.school h4{
+    font-size: 0.7rem;
+    color: rgb(3, 136, 224);
+}
+
+.awards h4{
+    font-size: 1rem;
+    color: rgb(3, 136, 224);
+}
+
+.school h5, .awards h5{
+    font-size: 0.7rem;
+}
+
+.school h6, .awards h6{
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+
+.award{
+    /* border: solid; */
+}
