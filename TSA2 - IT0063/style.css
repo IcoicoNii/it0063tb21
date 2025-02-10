@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  transition: 1.5s cubic-bezier(0.5, 0.3, 0.4, 1);
+  font-family: "Montserrat", serif;
+}
+
+html {
+  background-color: rgb(245, 245, 235);
+}
+
+.container {
+  margin: 0px auto;
+  width: 80%;
+  height: 100dvh;
+  gap: 10px;
+}
+
+
+.left-side {
+  flex-grow: 1;
+}
+
+.right-side {
+  flex-grow: 1;
+}
+
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_outline_color: #000000;
+  background-color: #252020;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  width: 70%;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1em;
+  color: white;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+  text-shadow: 2px 2px 2px #3a3a3a;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  transform: translateY(-700px);
+  transition-delay: 0.01s;
+  transition-duration: 1.5s;
+  opacity: 0%;
+}
+
+
+.in-box {
+  width: 100%;
+  height: 100%;
+  /* transition-delay: 0.3s; */
+  transition-duration: 1s;
+  opacity: 100%;
+}

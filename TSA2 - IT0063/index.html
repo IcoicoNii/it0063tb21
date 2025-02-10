@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Summative Assessment 3</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container flex justify-center p-[10px]">
+        <div class="left-side flex flex-col gap-[10px] justify-center items-center">
+
+            <button class="" onclick="showbox('sun-box','sun-inbox')"><span class="bg-red-500 button_top"> Sunday </span></button>
+            <button class="" onclick="showbox('mon-box','mon-inbox')"><span class="bg-orange-500 button_top"> Monday </span></button>
+            <button class="" onclick="showbox('tue-box','tue-inbox')"><span class="bg-yellow-500 button_top"> Tuesday </span></button>
+            <button class="" onclick="showbox('wed-box','wed-inbox')"><span class="bg-green-500 button_top"> Wednesday </span></button>
+            <button class="" onclick="showbox('thur-box','thur-inbox')"><span class="bg-blue-500 button_top"> Thursday </span></button>
+            <button class="" onclick="showbox('fri-box','fri-inbox')"><span class="bg-indigo-500 button_top"> Friday </span></button>
+            <button class="" onclick="showbox('sat-box','sat-inbox')"><span class="bg-violet-500 button_top"> Saturday </span></button>
+            
+        </div>
+        <div class="right-side flex flex-col justify-center items-center">
+            <div class="box wed border-10 border-green-500" id="wed-box"><div class="in-box bg-green-500" id = "wed-inbox"></div></div>
+            <div class="box mon border-10 border-orange-500" id="mon-box"><div class="in-box bg-orange-500" id = "mon-inbox"></div></div>
+            <div class="box sun border-10 border-red-500" id="sun-box"><div class="in-box bg-red-500" id = "sun-inbox"></div></div>
+            <div class="box thu border-10 border-blue-500" id="thur-box"><div class="in-box bg-blue-500" id = "thur-inbox"></div></div>
+            <div class="box tue border-10 border-yellow-500" id="tue-box"><div class="in-box bg-yellow-500" id = "tue-inbox"></div></div>
+            <div class="box sat border-10 border-blue-500" id="sat-box"><div class="in-box bg-violet-500" id = "sat-inbox"></div></div>
+            <div class="box fri border-10 border-indigo-500" id="fri-box"><div class="in-box bg-indigo-500" id = "fri-inbox"></div></div>
+        </div>
+
+
+    </div>    
+
+
+    
+</body>
+</html>
