@@ -10,7 +10,7 @@
 }
 
 .background-container {
-    background-image: url("assets/pinoy-cuisine-bg.jpg");
+    /* background-image: url("assets/pinoy-cuisine-bg.jpg"); */
     background-size: cover;
     width: 100%;
     height: 100dvh;
