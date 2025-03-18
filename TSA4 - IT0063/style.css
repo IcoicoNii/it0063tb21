@@ -32,9 +32,8 @@
     font-size: 4.5rem;
     transform: translate(7rem, -1.75rem);
     color: white;
-    filter: drop-shadow(3px 3px 0px black);
-
-    background: radial-gradient(#eee, #ff9f0e);
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    background: radial-gradient(#eee, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -43,10 +42,11 @@
     font-family: "Della Respira", serif;
     font-weight: 500;
     font-size: 1.5rem;
-    transform: translate(7rem, -2.3rem);
+    font-weight: 700;
+    transform: translate(6rem, -2.3rem);
     color: white;
-    filter: drop-shadow(1px 1px 0px black);
-    background: linear-gradient(to left, #eee, #ff9f0e);
+    filter: drop-shadow(0px 0px 3px black);
+    background: linear-gradient(to left, #eee, #ffb94f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
