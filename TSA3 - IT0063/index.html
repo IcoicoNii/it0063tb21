@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Summative Assessment 3</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+    <div class="bgcolor" id = "background-rotate"></div>
+        <div class="calculator">
+            <h1 class = "logo">cashew</h1>
+            <div class="output-container" value = "">
+                <div class="output" id = "output">
+                    
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="button" id = "clear" onclick="clearDisplay(), changeBorder('clear')" id = "clear">C</div>
+                <div class="button" id = "<" onclick="backSpace(), changeBorder('<')"><</div>
+                <div class="button" id = "/" onclick="addToDisplay('/'), changeBorder('/')">/</div>
+                <div class="button" id = "*" onclick="addToDisplay('*'), changeBorder('*')">x</div>
+                <div class="button" id = "7" onclick="addToDisplay('7'), changeBorder('7')">7</div>
+                <div class="button" id = "8" onclick="addToDisplay('8'), changeBorder('8')">8</div>
+                <div class="button" id = "9" onclick="addToDisplay('9'), changeBorder('9')">9</div>
+                <div class="button" id = "-" onclick="addToDisplay('-'), changeBorder('-')">-</div>
+                <div class="button" id = "4" onclick="addToDisplay('4'), changeBorder('4')">4</div>
+                <div class="button" id = "5" onclick="addToDisplay('5'), changeBorder('5')">5</div>
+                <div class="button" id = "6" onclick="addToDisplay('6'), changeBorder('6')">6</div>
+                <div class="button" id = "+" onclick="addToDisplay('+'), changeBorder('+')">+</div>
+                <div class="button" id = "1" onclick="addToDisplay('1'), changeBorder('1')">1</div>
+                <div class="button" id = "2" onclick="addToDisplay('2'), changeBorder('2')">2</div>
+                <div class="button" id = "3" onclick="addToDisplay('3'), changeBorder('3')">3</div>
+                <div class="button" id = "equalsign" onclick="computeResult(), changeBorder('equalsign')">=</div>
+                <div class="button" id = "zero" onclick="addToDisplay('0'), changeBorder('zero')">0</div>
+                <div class="button" id = "." onclick="addToDisplay('.'), changeBorder('.')">.</div>
+
+            </div>
+        </div>
+
+
+        
+    </div>
+    
+</body>
+</html>
