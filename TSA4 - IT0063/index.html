@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Summative Assessment 4</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="background-container">
+        <!-- HEADER -->
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+            <div class="row d-flex w-100 align-items-center justify-content-center">
+                <div class="col-md-8 header ">
+                    <img src="" alt="">
+                    <h1>RESTAURANT GUIDE</h1>
+                    <h3>PRODUCED BY: LOCAL MAGAZINE</h3>
+                </div>
+                <button class="floating-menu" onclick="mainMenu()">Main Menu</button>
+                <div class="col-md-4 menu" onclick="mainMenu()">
+                    <button>Main Menu</button>
+                </div>
+            </div>
+
+            <!-- FOOD CARDS -->
+            <div class="food-container w-100 d-flex align-items-center row justify-content-center">
+                <div class="col-md-3 filler-col">
+                    asd
+                </div>
+                <div class="food-card-container col-sm-9 p-0">
+                    <div class="card food-card" onclick="showCard('card1')" id="first-container">
+                        <div class="food-name">
+                            PORK ADOBO
+                        </div>
+                        <div class="card-footer">
+                            <hr>
+                            <p>Taste the savory and tangy dish perfectly paired with rice!</p>
+                            <hr>
+                            <i class="bi bi-play-circle"> More</i>
+                        </div>
+                    </div>
+                    <div class="card food-card" onclick="showCard('card2')" id="second-container">
+                        <div class="food-name">
+                            BEEF CALDARETA
+                        </div>
+                        <div class="card-footer">
+                            <hr>
+                            <p>The hearty and flavorful Filipino stew</p>
+                            <hr>
+                            <i class="bi bi-play-circle"> More</i>
+                        </div>
+                    </div>
+                    <div class="card food-card" onclick="showCard('card3')" id="third-container">
+                        <div class="food-name">
+                            CRISPY PATA
+                        </div>
+                        <div class="card-footer">
+                            <hr>
+                            <p>The "putok-batok" dish that brings you satisfaction in every bite!</p>
+                            <hr>
+                            <i class="bi bi-play-circle"> More</i>
+                        </div>
+                    </div>
+                    <div class="card food-card" onclick="showCard('card4')" id="fourth-container">
+                        <div class="food-name">
+                            GRILLED LIEMPO
+                        </div>
+                        <div class="card-footer">
+                            <hr>
+                            <p>Dish cooked in char and nothing pars!</p>
+                            <hr>
+                            <i class="bi bi-play-circle"> More</i>
+                        </div>
+                    </div>
+
+                    <!-- CONTENT CARDS -->
+                    <div class="content-card row" id="card1">
+                        <!-- FOOD NAME -->
+                        <div class="col col-lg-1 name-container">
+                            <h1 class="sidename scale">Pork Adobo</h1>
+                        </div>
+                        <div class="images col-lg-4">
+                            <img src="assets/adoboCard.jpg" alt="">
+                        </div>
+                        <div class="description col-lg-7">
+                            <div class="desc">
+                                <h1>Pork Adobo</h1>
+                                <div class="info">
+                                    <div
+                                        class="resto-info location col-6 d-flex justify-content-center align-items-center">
+                                        <p>3/F SM CITY NORTH EDSA <br>
+                                            QUEZON CITY, 1105, METRO MANILA <br>
+                                            T: (02) 6932 5977 <br>
+                                            W: MEZZA</p>
+                                    </div>
+                                    <div class="resto-info col-6 d-flex justify-content-center align-items-center">
+                                        <p>CATEGORY: Filipino Cuisine <br>
+                                            OPEN: 10AM - 10PM <br>
+                                            PRICE: $$</p>
+                                    </div>
+                                </div>
+                                <div class="bginfo">
+                                    <p class="content-info">
+                                        Pork adobo is a beloved Filipino dish where succulent pork is braised in a
+                                        flavorful mixture of vinegar, soy sauce, garlic, and other aromatics, resulting
+                                        in a savory and tangy dish that pairs perfectly with rice.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="content-card row" id="card2">
+                        <!-- FOOD NAME -->
+                        <div class="col col-lg-1 name-container">
+                            <h1 class="sidename scale">Beef Caldareta</h1>
+                        </div>
+                        <div class="images col-lg-4">
+                            <img src="assets/caldaretaCard.jpg" alt="">
+                        </div>
+                        <div class="description col-lg-7">
+                            <div class="desc">
+                                <h1>Beef Caldareta</h1>
+                                <div class="info">
+                                    <div
+                                        class="resto-info location col-6 d-flex justify-content-center align-items-center">
+                                        <p>GEN. MALVAR ST, <br> MALATE, MANILA, 1004 METRO MANILA <br>
+                                            T: (02) 5818 0788 <br>
+                                            W: MB KITCHEN</p>
+                                    </div>
+                                    <div class="resto-info col-6 d-flex justify-content-center align-items-center">
+                                        <p>CATEGORY: Filipino Cuisine <br>
+                                            OPEN: 10AM - 10PM <br>
+                                            PRICE: $$$</p>
+                                    </div>
+                                </div>
+                                <div class="bginfo">
+                                    <p class="content-info">
+                                        Beef Caldereta is a hearty, flavorful Filipino stew, traditionally made with
+                                        tender beef simmered in a rich, tomato-based sauce, often featuring potatoes,
+                                        carrots, and bell peppers, and known for its unique use of liver spread for a
+                                        creamy, rich texture.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content-card row" id="card3">
+                        <!-- FOOD NAME -->
+                        <div class="col col-lg-1 name-container">
+                            <h1 class="sidename scale">Crispy Pata</h1>
+                        </div>
+                        <div class="images col-lg-4">
+                            <img src="assets/pataCard.jpg" alt="">
+                        </div>
+                        <div class="description col-lg-7">
+                            <div class="desc">
+                                <h1>Crispy Pata</h1>
+                                <div class="info">
+                                    <div
+                                        class="resto-info location col-6 d-flex justify-content-center align-items-center">
+                                        <p>SOUTH DR, ERMITA, MANILA, 1000  <br>  METRO MANILA<br>
+                                            T: (02) 8332 5977 <br>
+                                            W: KUSINA</p>
+                                    </div>
+                                    <div class="resto-info col-6 d-flex justify-content-center align-items-center">
+                                        <p>CATEGORY: Filipino Cuisine <br>
+                                            OPEN: 10AM - 10PM <br>
+                                            PRICE: $</p>
+                                    </div>
+                                </div>
+                                <div class="bginfo">
+                                    <p class="content-info">
+                                        Crispy pata is a popular Filipino dish featuring deep-fried pork hock or pig
+                                        trotters, known for its crispy skin and tender, flavorful meat, often served
+                                        with a soy-vinegar dipping sauce.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content-card row" id="card4">
+                        <!-- FOOD NAME -->
+                        <div class="col col-lg-1 name-container">
+                            <h1 class="sidename scale">Grilled Liempo</h1>
+                        </div>
+                        <div class="images col-lg-4">
+                            <img src="assets/liempoCard.webp" alt="">
+                        </div>
+                        <div class="description col-lg-7">
+                            <div class="desc">
+                                <h1>Grilled Liempo</h1>
+                                <div class="info">
+                                    <div
+                                        class="resto-info location col-6 d-flex justify-content-center align-items-center">
+                                        <p>PEDRO GIL, CORNER DEL PILAR ST,<br> MALATE, MANILA, 1004 METRO MANILA<br>
+                                            T: (02) 8132 5237 <br>
+                                            W: LALA</p>
+                                    </div>
+                                    <div class="resto-info col-6 d-flex justify-content-center align-items-center">
+                                        <p>CATEGORY: Filipino Cuisine <br>
+                                            OPEN: 10AM - 10PM <br>
+                                            PRICE: $</p>
+                                    </div>
+                                </div>
+                                <div class="bginfo">
+                                    <p class="content-info">
+                                        Inihaw na liempo, or Filipino grilled pork belly, boasts a combination of smoky,
+                                        savory, and slightly sweet flavors through a classic soy-calamansi marinade.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

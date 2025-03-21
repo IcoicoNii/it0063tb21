@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* border: solid 0.1px; */
+    transition: 0.5s;
+}
+
+body {
+    height: 99.8dvh;
+    background-image: url("assets/pinoy-cuisine-bg.jpg");
+    background-size: cover;
+    display: grid;
+}
+
+.background-container {
+    display: flex;
+    width: 100%;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
+.food-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    height: 475px;
+}
+
+/* Headers */
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.header img {
+    content: url("assets/header1.png");
+
+    width: 25rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.floating-menu {
+    display: none;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.header h1 {
+    font-family: "Radley", serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    transform: translate(7rem, -1.3rem);
+    color: white;
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    background: radial-gradient(#eee, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 80%;
+    margin: 0;
+}
+
+.header h3 {
+    font-family: "Della Respira", serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transform: translate(6rem, -1.2rem);
+    color: white;
+    filter: drop-shadow(0px 0px 3px black);
+    background: linear-gradient(to left, #eee, #ffb94f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+button {
+    --color: #d58001;
+    font-family: inherit;
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+    font-family: "Radley", serif;
+    font-weight: 700;
+}
+
+button::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to left, #eee, #ff9f0e);
+    width: 350px;
+    height: 500px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: white;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+}
+
+button:hover::before {
+    top: -70px;
+    left: -70px;
+}
+
+button:active {
+    border: white;
+}
+
+/* FOOD CARDS */
+
+.food-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid white 0.1px;
+    border-radius: 3px;
+    /* filter: drop-shadow(0px 0px 1px rgb(75, 75, 75)); */
+    height: 30rem;
+    overflow: hidden;
+}
+
+.food-name {
+    width: 100%;
+    height: 4rem;
+    /* border: solid; */
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+    font-family: "Della Respira", serif;
+    font-weight: 700;
+}
+
+.card-footer {
+    /* border: solid white; */
+    height: 8.5rem;
+    background: rgb(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    opacity: 0;
+}
+
+.food-card:hover {
+    .card-footer {
+        opacity: 100;
+    }
+}
+
+.card-footer p {
+    margin: 0;
+    /* padding: 5px; */
+    font-family: "Della Respira", serif;
+}
+
+.card-footer hr {
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid;
+}
+
+.bi {
+    cursor: pointer;
+}
+
+#first-container {
+    background-image: url("assets/adoboFront.jpg");
+    background-size: cover;
+}
+
+#second-container {
+    background-image: url("assets/beefcaldaretafront.jpg");
+    background-size: cover;
+}
+
+#third-container {
+    background-image: url("assets/pataFront.jpg");
+    background-size: cover;
+}
+
+#fourth-container {
+    background-image: url("assets/grilledliempoFront.jpg");
+    background-size: cover;
+}
+
+/* CONTENT CARDS */
+.content-card {
+    position: absolute;
+    /* border: solid white; */
+    height: 517px;
+    background-color: white;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 0;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#card1,
+#card2,
+#card3,
+#card4 {
+    transform: translateY(560px);
+    opacity: 0;
+}
+
+.content-card .row {
+    display: flex;
+    margin: 0;
+}
+
+.content-card .col {
+    padding: 0;
+    /* border: solid gray; */
+    height: 517px;
+}
+
+.content-card .name-container {
+    color: white;
+    background: rgb(186, 96, 0);
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-container h1 {
+    font-family: "Yatra One", system-ui;
+    transform: scale(5) rotate(-90deg);
+    /* border: solid; */
+    font-size: 0.5rem;
+
+}
+
+.content-card img {
+    height: 100%;
+}
+
+.content-card .images {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.description {
+    background-color: white;
+    padding: 50px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    /* margin: 50px; */
+    /* background-image: url("assets/crumpledpaperbg.png"); */
+    /* background-size: fill; */
+    /* border: solid; */
+    /* gap: 20px; */
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info p {
+    margin: 0;
+}
+
+.bginfo p {
+    margin: 0;
+    border: solid 1px black;
+    border-left: 10px black;
+    border-right: 10px black;
+    padding: 30px 0px;
+}
+
+.desc h1 {
+    color: #eec438;
+    font-family: "Yatra One", system-ui;
+    font-weight: 700;
+    filter: drop-shadow(1px 1px 0px rgb(0, 0, 0));
+}
+
+.content-info {
+    /* padding: 30px 0px; */
+}
+
+.location {
+    border: solid 1px;
+    border-left: 10px black;
+    border-top: 10px black;
+    border-bottom: 10px black;
+}
+
+.resto-info {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1258px) {
+    body {
+        margin-top: 20px;
+    }
+
+    .filler-col {
+        display: none;
+    }
+
+    .food-container {
+        padding-top: 20px;
+    }
+
+    .header h1 {
+        transform: translate(0, 0);
+        text-align: center;
+        font-size: 4.5rem;
+    }
+
+    .header h3 {
+        transform: translate(0, 0);
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .header img {
+        width: 25rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .floating-menu {
+        display: block;
+        position: fixed;
+
+    }
+
+    .header img {
+        content: url("assets/header2.png");
+
+    }
+
+    .header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* 
+@media (max-width:1000px){
+    
+} */
+
+@media (max-width: 991.20px) {
+
+    .background-container {
+        padding-bottom: 50px;
+    }
+
+    .name-container h1 {
+        transform: scale(1) rotate(0deg);
+        font-size: 2.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .desc h1{
+        text-align: center;
+    }
+
+    .content-card {
+        position: fixed;
+        top: 30px;
+        width: 90%;
+        height: 90%;
+        overflow: auto;
+        border-radius: 0px;
+    }
+
+    .content-card .col {
+        padding: 0;
+        /* border: solid gray; */
+        height: 70px;
+    }
+
+    .content-card .images {
+        height: 250px;
+    }
+
+    .content-card img {
+        /* height: none; */
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+}
+
+@media (max-width: 772px) {
+    .header h1 {
+        transform: translate(0, 0);
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .description {
+        padding: 20px;
+    }
+
+    .header h3 {
+        transform: translate(0, 0);
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .header h2 {
+        width: 25rem;
+
+    }
+
+    .header img {
+        width: 17rem;
+    }
+
+
+}
